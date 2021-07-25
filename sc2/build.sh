@@ -19,6 +19,13 @@
 # You can start this program as 'SH="/bin/sh -x" ./build.sh' to
 # enable command tracing.
 
+echo The \"master\" branch of this repository is no longer maintained. Use
+echo the \"main\" branch for the primary development branch based on version
+echo 0.7\'s maintenance and development, or the \"experimental\" branch for
+echo the code that was previously unique to master.
+echo
+read -n1 -r -p "Press any key to continue..."
+echo
 if [ -z "$SH" ]; then
 	if [ `uname -s` = SunOS ]; then
 		# /bin/sh of Solaris is incompatible. Fortunately, Sun ships

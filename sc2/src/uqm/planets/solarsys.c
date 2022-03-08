@@ -840,7 +840,7 @@ ProcessShipControls (void)
 	COUNT index;
 	SIZE delta_x, delta_y;
 
-	if (CurrentInputState.key[PlayerControls[0]][KEY_UP])
+	if (CurrentInputState.key[PlayerControls[0]][KEY_UP] || CurrentInputState.key[PlayerControls[0]][KEY_THRUST])
 		delta_y = -1;
 	else
 		delta_y = 0;

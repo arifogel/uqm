@@ -421,6 +421,8 @@ ControlInputToBattleInput (const int *keyState)
 	BATTLE_INPUT_STATE InputState = 0;
 
 	if (keyState[KEY_UP])
+		InputState |= BATTLE_UP;
+	if (keyState[KEY_THRUST])
 		InputState |= BATTLE_THRUST;
 	if (keyState[KEY_LEFT])
 		InputState |= BATTLE_LEFT;

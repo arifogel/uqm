@@ -198,7 +198,7 @@ static BOOLEAN
 SelectShip_processInput (GETMELEE_STATE *gms, COUNT playerI,
 		BATTLE_INPUT_STATE inputState)
 {
-	if (inputState & BATTLE_WEAPON)
+	if (inputState & BATTLE_THRUST)
 	{
 		if (gms->player[playerI].col == NUM_PICKMELEE_COLUMNS &&
 				gms->player[playerI].row == 0)
@@ -240,7 +240,7 @@ SelectShip_processInput (GETMELEE_STATE *gms, COUNT playerI,
 			if (new_col++ == NUM_PICKMELEE_COLUMNS)
 				new_col = 0;
 		}
-		if (inputState & BATTLE_THRUST)
+		if (inputState & BATTLE_UP)
 		{
 			if (new_row-- == 0)
 				new_row = NUM_PICKMELEE_ROWS - 1;
@@ -283,7 +283,7 @@ selectShipComputer (ComputerInputContext *context, GETMELEE_STATE *gms)
 			COMPUTER_SELECTION_DELAY)
 		return TRUE;
 
-	return SelectShip_processInput (gms, context->playerNr, BATTLE_WEAPON);
+	return SelectShip_processInput (gms, context->playerNr, BATTLE_THRUST);
 			// Simulate selection of the random choice button.
 }
 

@@ -93,6 +93,7 @@ static const char *flight_res_names[] = {
 	"weapon",
 	"special",
 	"escape",
+	"thrust",
 	NULL
 };
 

@@ -74,7 +74,7 @@ static void clear_control (WIDGET_CONTROLENTRY *widget);
 #define BUTTON_COUNT       10
 #define LABEL_COUNT         4
 #define TEXTENTRY_COUNT     1
-#define CONTROLENTRY_COUNT  7
+#define CONTROLENTRY_COUNT  8
 
 /* The space for our widgets */
 static WIDGET_MENU_SCREEN menus[MENU_COUNT];
@@ -173,6 +173,7 @@ static WIDGET *editkeys_widgets[] = {
 	(WIDGET *)(&controlentries[4]),
 	(WIDGET *)(&controlentries[5]),
 	(WIDGET *)(&controlentries[6]),
+	(WIDGET *)(&controlentries[7]),
 	(WIDGET *)(&buttons[9]),
 	NULL };
 

@@ -36,6 +36,7 @@ enum {
 	KEY_WEAPON,
 	KEY_SPECIAL,
 	KEY_ESCAPE,
+	KEY_THRUST,
 	NUM_KEYS
 };
 enum {
@@ -89,6 +90,7 @@ typedef UBYTE BATTLE_INPUT_STATE;
 #define BATTLE_SPECIAL    ((BATTLE_INPUT_STATE)(1 << 4))
 #define BATTLE_ESCAPE     ((BATTLE_INPUT_STATE)(1 << 5))
 #define BATTLE_DOWN       ((BATTLE_INPUT_STATE)(1 << 6))
+#define BATTLE_UP         ((BATTLE_INPUT_STATE)(1 << 7))
 
 BATTLE_INPUT_STATE CurrentInputToBattleInput (COUNT player);
 BATTLE_INPUT_STATE PulsedInputToBattleInput (COUNT player);

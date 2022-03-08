@@ -560,3 +560,4 @@ Right
 Weapon
 Special
 Escape
+Thrust

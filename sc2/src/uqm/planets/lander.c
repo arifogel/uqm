@@ -1459,7 +1459,7 @@ LanderFire (SIZE facing)
 			/* shot images immediately follow the lander images */
 			facing + ANGLE_TO_FACING (FULL_CIRCLE));
 
-	if (!CurrentInputState.key[PlayerControls[0]][KEY_UP])
+	if (!CurrentInputState.key[PlayerControls[0]][KEY_UP] && !CurrentInputState.key[PlayerControls[0]][KEY_THRUST])
 	{
 		wdx = 0;
 		wdy = 0;
@@ -1623,7 +1623,7 @@ landerSpeedNumer = WORLD_TO_VELOCITY (48);
 				turn_wait = SHUTTLE_TURN_WAIT;
 			}
 
-			if (!CurrentInputState.key[PlayerControls[0]][KEY_UP])
+			if (!CurrentInputState.key[PlayerControls[0]][KEY_UP] && !CurrentInputState.key[PlayerControls[0]][KEY_THRUST])
 			{
 				dx = 0;
 				dy = 0;
